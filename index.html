@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqua Saver AI - Smart Irrigation Project</title>
+    <style>
+        /* --- CSS STYLES (The Look & Feel) --- */
+        :root {
+            --primary: #007bff; /* Blue */
+            --dark: #343a40;
+            --light: #f8f9fa;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* Navigation */
+        nav {
+            background: var(--dark);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav h1 { margin: 0; }
+
+        /* Hero Section (Top Banner) */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x900/?water,farm');
+            background-size: cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        header h2 { font-size: 2.5rem; margin-bottom: 10px; }
+        header p { font-size: 1.2rem; max-width: 600px; margin: 0 auto; }
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        /* Sections */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Features Grid */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .feature-card {
+            background: var(--light);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Diagram Section */
+        .diagram-box {
+            background: white;
+            border: 2px dashed #ddd;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .diagram-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Component List */
+        .components ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .components li {
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>AQUA SAVER AI</h1>
+    </nav>
+
+    <header>
+        <h2>Smart Water Conservation System</h2>
+        <p>An IoT-based solution that uses Artificial Intelligence and Weather Forecasting to save water in agriculture.</p>
+        <a href="#features" class="btn">Explore Project</a>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <p style="text-align: center;">
+            Aqua Saver AI isn't just a timer. It continuously monitors soil moisture levels and checks the 
+            OpenWeatherMap API for rain forecasts. If rain is predicted, the system pauses irrigation 
+            automatically, saving up to 40% more water than traditional systems.
+        </p>
+    </div>
+
+    <div class="container" id="features">
+        <div class="features">
+            <div class="feature-card">
+                <h3>💧 Moisture Sensing</h3>
+                <p>Real-time capacitive soil analysis prevents over-watering and root rot.</p>
+            </div>
+            <div class="feature-card">
+                <h3>☁️ Weather AI</h3>
+                <p>Connects to WiFi to check local weather forecasts and anticipate rain.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📱 Mobile Control</h3>
+                <p>Full manual control and data monitoring via the Blynk IoT App.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">Project Design</h2>
+        <div class="diagram-box">
+            <img src="project_diagram.jpg" alt="3D Diagram of Aqua Saver AI (Place your image here)">
+            <p><i>Figure 1: 3D Exploded View of the Control Unit and Enclosure</i></p>
+        </div>
+    </div>
+
+    <div class="container components">
+        <h2 class="section-title">Hardware Used</h2>
+        <ul>
+            <li><strong>Controller:</strong> ESP32 Development Board (WiFi + Bluetooth)</li>
+            <li><strong>Sensors:</strong> Capacitive Soil Moisture Sensor v1.2</li>
+            <li><strong>Actuation:</strong> 5V Submersible Pump & 1-Channel Relay</li>
+            <li><strong>Power:</strong> 5V 2A Power Supply / Solar Integration</li>
+            <li><strong>Software:</strong> Arduino IDE, C++, Blynk IoT Cloud, OpenWeatherMap API</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>Designed by [Your Name Here] | Dept of Agricultural Engineering</p>
+        <p>&copy; 2026 Aqua Saver AI Project</p>
+    </footer>
+
+</body>
+</html>
