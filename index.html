@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aqua Saver AI - Smart Irrigation Project</title>
-
+    
    <link rel="icon" type="image/png" href="favicon.png"> 
    <style>
         /* --- CSS STYLES (The Look & Feel) --- */
@@ -20,14 +20,58 @@
             line-height: 1.6;
             color: #333;
         }
-        
+
         /* Navigation */
-        nav {
-            background: var(--dark);
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
+        /* Navigation Styling */
+.navbar {
+    background: var(--dark);
+    color: #fff;
+    padding: 1rem 0; /* Spacing top/bottom */
+    position: sticky; /* Keeps menu at top when scrolling */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex; /* Makes items sit side-by-side */
+    justify-content: space-between; /* Pushes Logo left, Links right */
+    align-items: center;
+}
+
+/* Logo Style */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--light);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+/* Menu Links Style */
+.nav-links {
+    list-style: none; /* Removes bullet points */
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #ccc; /* Light gray text */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect (The "Cool" Part) */
+.nav-links a:hover {
+    color: var(--primary); /* Turns Blue on hover */
+}
         nav h1 { margin: 0; }
 
         /* Hero Section (Top Banner) */
@@ -115,9 +159,18 @@
 </head>
 <body>
 
-    <nav>
-        <h1>AQUA SAVER AI</h1>
-    </nav>
+    <nav class="navbar">
+    <div class="container">
+        <a href="#" class="logo">Aqua Saver AI</a>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
 
     <header>
         <h2>Smart Water Conservation System</h2>
