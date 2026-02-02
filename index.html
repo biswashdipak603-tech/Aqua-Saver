@@ -219,6 +219,44 @@
             margin-top: 40px;
         }
     </style>
+    /* PASTE THIS AT THE TOP (Inside <style>...</style>) */
+.contact-section {
+    padding: 60px 0;
+    background: #fff;
+    text-align: center;
+    border-top: 5px solid var(--primary);
+}
+
+.contact-section h2 {
+    color: var(--dark);
+    margin-bottom: 10px;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-item h3 {
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.contact-item p a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.contact-item p a:hover {
+    color: var(--primary);
+}
 </head>
 <body>
 
@@ -274,15 +312,15 @@
 
     <div class="container" id="features">
         <div class="features">
-            <div class="feature-card">
+            <div class="card">
                 <h3>💧 Moisture Sensing</h3>
                 <p>Real-time capacitive soil analysis prevents over-watering and root rot.</p>
             </div>
-            <div class="feature-card">
+            <div class="card">
                 <h3>☁️ Weather AI</h3>
                 <p>Connects to WiFi to check local weather forecasts and anticipate rain.</p>
             </div>
-            <div class="feature-card">
+            <div class="card">
                 <h3>📱 Mobile Control</h3>
                 <p>Full manual control and data monitoring via the Blynk IoT App.</p>
             </div>
@@ -312,7 +350,24 @@
             <li><strong>Software:</strong> Arduino IDE, C++, Blynk IoT Cloud, OpenWeatherMap API</li>
         </ul>
     </div>
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Have questions about Aqua Saver AI? Reach out!</p>
+        
+        <div class="contact-box">
+            <div class="contact-item">
+                <h3>📞 Phone</h3>
+                <p><a href="tel:+917086262081">+91 70862 62081</a></p>
+            </div>
 
+            <div class="contact-item">
+                <h3>📧 Email</h3>
+                <p><a href="mailto:info@aquasaver.com">info@aquasaver.com</a></p>
+            </div>
+        </div>
+    </div>
+</section>
     <footer>
         <p>Designed by [DIPAK BISWASH & KIRON ROY] | Department of Agricultural Engineering</p>
         <p>&copy; 2026 Aqua Saver AI Project</p>
